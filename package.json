@@ -2,6 +2,7 @@
   "name": "servertest",
   "dependencies": {
     "koa": "~0.2.1",
-    "koa-logger": "~1.1.0"
+    "koa-logger": "~1.1.0",
+    "koa-router": "~2.3.0"
   }
 }
