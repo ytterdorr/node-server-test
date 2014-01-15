@@ -14,5 +14,6 @@ app.get('/',function *(){
 });
 
 app.resource('animals', require('./animals'));
+app.resource('games', require('./games'));
 
 app.listen(3000);
