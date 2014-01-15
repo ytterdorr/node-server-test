@@ -5,13 +5,9 @@ var app = koa();
 // logger
 
 app.use(logger());
-//app.use(common.responseTime());
-//app.use(common.compress());
-
-// response
 
 app.use(function *(){
-  this.body = 'Hello World';
+  this.body = 'Hello World this is your lord speaking.';
 });
 
 app.listen(3000);
