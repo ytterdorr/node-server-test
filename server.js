@@ -15,10 +15,10 @@ app.use(logger());
 app.use(router(app));
 
 app.get('/',function *(){
-  yield send(this, 'client/views/index.html', { root: staticRoot });
+  yield send(this, 'client/index.html', { root: staticRoot });
 });
 
-app.use(mount('/js',serve('client/js')));
+app.use(mount('/components',serve('client/components')));
 
 
 app.resource('animals', require('./animals'));
