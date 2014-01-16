@@ -1,5 +1,6 @@
 {
   "name": "servertest",
+  "repository": "git@github.com:ytterdorr/node-server-test.git",
   "dependencies": {
     "koa": "~0.2.1",
     "koa-logger": "~1.1.0",
