@@ -19,10 +19,9 @@ app.get('/',function *(){
 });
 
 app.use(mount('/components',serve('client/components')));
-
+app.use(mount('/bower_components',serve('bower_components')));
 
 app.resource('animals', require('./animals'));
-app.resource('games', require('./games'));
 
 app.listen(3000);
 
