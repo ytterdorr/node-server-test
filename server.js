@@ -15,7 +15,7 @@ app.use(logger());
 app.use(router(app));
 
 app.get('/',function *(){
-  yield send(this, 'client/index.html', { root: staticRoot });
+  yield send(this, __dirname + '/client/index.html');
 });
 
 app.use(mount('/components',serve('client/components')));
